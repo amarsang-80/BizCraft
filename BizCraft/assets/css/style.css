@@ -1,0 +1,158 @@
+/* ====== GENERAL STYLES ====== */
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ====== NAVBAR ====== */
+.navbar {
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/* ====== HERO SECTION ====== */
+.hero {
+    padding: 100px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hero h1 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero .lead {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* ====== SERVICES ====== */
+.card-service {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 20px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.card-service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.feature-icon {
+    font-size: 2rem;
+    color: #2563EB;
+    margin-bottom: 15px;
+}
+
+/* ====== PROJECTS ====== */
+.card img {
+    border-radius: 0.5rem;
+}
+
+.card-body h6 {
+    font-weight: 600;
+}
+
+.card-body p {
+    font-size: 0.9rem;
+}
+
+/* ====== PRICING ====== */
+.pricing .card {
+    border-radius: 0.5rem;
+    padding: 30px 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.pricing .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.08);
+}
+
+/* ====== TEAM ====== */
+.team img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.team h6 {
+    font-weight: 600;
+}
+
+.team small {
+    color: #6b7280;
+}
+
+/* ====== FOOTER ====== */
+footer {
+    background: #111827;
+    color: #fff;
+    padding: 60px 15px 20px 15px;
+}
+
+footer a {
+    color: #fff;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #2563EB;
+}
+
+footer .footer-logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/* ====== MEDIA QUERIES ====== */
+@media (max-width: 992px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .hero img {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .team img {
+        width: 100px;
+        height: 100px;
+    }
+    .card-service {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    .hero .lead {
+        font-size: 1rem;
+    }
+    .pricing .card {
+        margin-bottom: 20px;
+    }
+}
